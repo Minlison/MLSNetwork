@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLSChainRequest Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MLSNetwork </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MinLison</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/requestAccessories">requestAccessories</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addAccessory:">- addAccessory:</option>
+		
+		<option value="//api/name/addRequest:callback:">- addRequest:callback:</option>
+		
+		<option value="//api/name/requestArray">- requestArray</option>
+		
+		<option value="//api/name/start">- start</option>
+		
+		<option value="//api/name/stop">- stop</option>
+		
+		<option value="//api/name/toggleAccessoriesDidStopcallback">- toggleAccessoriesDidStopcallback</option>
+		
+		<option value="//api/name/toggleAccessoriesWillStartcallback">- toggleAccessoriesWillStartcallback</option>
+		
+		<option value="//api/name/toggleAccessoriesWillStopcallback">- toggleAccessoriesWillStopcallback</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLSChainRequest Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLSChainRequest.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>链式请求
+按照数组顺序依次请求，只有第一个请求完成并且成功后，才会进行第二个请求</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/requestArray" title="requestArray"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestArray">&ndash;&nbsp;requestArray</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>网络请求数组</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSArray&lt;MLSBaseRequest*&gt; *)requestArray</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>网络请求数组</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSChainRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>代理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak, nullable) id&lt;MLSChainRequestDelegate&gt; delegate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSChainRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestAccessories" title="requestAccessories"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestAccessories">&nbsp;&nbsp;requestAccessories</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>监听网络请求状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, nullable) NSMutableArray&lt;id&lt;MLSRequestAccessory&gt; &gt; *requestAccessories</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSChainRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addAccessory:" title="addAccessory:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addAccessory:">&ndash;&nbsp;addAccessory:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加一个监听网络请求状态</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addAccessory:(id&lt;MLSRequestAccessory&gt;)<em>accessory</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accessory</code></th>
+						<td><p>监听者</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSChainRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="method-title"><code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>开始</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)start</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSChainRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>停止</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSChainRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addRequest:callback:" title="addRequest:callback:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addRequest:callback:">&ndash;&nbsp;addRequest:callback:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>添加一个网络请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addRequest:(MLSBaseRequest *)<em>request</em> callback:(nullable MLSChaincallback)<em>callback</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>网络请求</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>callback</code></th>
+						<td><p>回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSChainRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="RequestAccessory Methods" name="task_RequestAccessory Methods"></a>
+						<h2 class="task-title">RequestAccessory Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/toggleAccessoriesWillStartcallback" title="toggleAccessoriesWillStartcallback"></a>
+	<h3 class="method-title"><code><a href="#//api/name/toggleAccessoriesWillStartcallback">&ndash;&nbsp;toggleAccessoriesWillStartcallback</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)toggleAccessoriesWillStartcallback</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/toggleAccessoriesWillStopcallback" title="toggleAccessoriesWillStopcallback"></a>
+	<h3 class="method-title"><code><a href="#//api/name/toggleAccessoriesWillStopcallback">&ndash;&nbsp;toggleAccessoriesWillStopcallback</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)toggleAccessoriesWillStopcallback</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/toggleAccessoriesDidStopcallback" title="toggleAccessoriesDidStopcallback"></a>
+	<h3 class="method-title"><code><a href="#//api/name/toggleAccessoriesDidStopcallback">&ndash;&nbsp;toggleAccessoriesDidStopcallback</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)toggleAccessoriesDidStopcallback</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 MinLison. All rights reserved. Updated: 2019-08-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

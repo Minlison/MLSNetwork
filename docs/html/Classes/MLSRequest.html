@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLSRequest Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MLSNetwork </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MinLison</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/cacheable">cacheable</option>
+		
+		<option value="//api/name/ignoreCache">ignoreCache</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/cacheBasePath">- cacheBasePath</option>
+		
+		<option value="//api/name/cacheSensitiveData">- cacheSensitiveData</option>
+		
+		<option value="//api/name/cacheTimeInSeconds">- cacheTimeInSeconds</option>
+		
+		<option value="//api/name/cacheVersion">- cacheVersion</option>
+		
+		<option value="//api/name/cacheVersionString">- cacheVersionString</option>
+		
+		<option value="//api/name/clearCache">- clearCache</option>
+		
+		<option value="//api/name/isDataFromCache">- isDataFromCache</option>
+		
+		<option value="//api/name/loadCacheWithError:">- loadCacheWithError:</option>
+		
+		<option value="//api/name/saveResponseDataToCacheFile:">- saveResponseDataToCacheFile:</option>
+		
+		<option value="//api/name/startWithCache:withCompletionBlockWithSuccess:failure:">- startWithCache:withCompletionBlockWithSuccess:failure:</option>
+		
+		<option value="//api/name/startWithoutCache">- startWithoutCache</option>
+		
+		<option value="//api/name/writeCacheAsynchronously">- writeCacheAsynchronously</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLSRequest Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/MLSBaseRequest.html">MLSBaseRequest</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLSRequest.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>带有缓存功能的 Request</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/ignoreCache" title="ignoreCache"></a>
+	<h3 class="method-title"><code><a href="#//api/name/ignoreCache">&nbsp;&nbsp;ignoreCache</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否忽略本地缓存</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL ignoreCache</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cacheable" title="cacheable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheable">&nbsp;&nbsp;cacheable</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否允许缓存</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL cacheable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDataFromCache" title="isDataFromCache"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDataFromCache">&ndash;&nbsp;isDataFromCache</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>内容是否是从缓存中获取</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isDataFromCache</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>是否从缓存中获取</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loadCacheWithError:" title="loadCacheWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loadCacheWithError:">&ndash;&nbsp;loadCacheWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>获取缓存</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)loadCacheWithError:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>错误信息</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>是否获取成功</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startWithoutCache" title="startWithoutCache"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startWithoutCache">&ndash;&nbsp;startWithoutCache</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>请求，不使用缓存</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startWithoutCache</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveResponseDataToCacheFile:" title="saveResponseDataToCacheFile:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveResponseDataToCacheFile:">&ndash;&nbsp;saveResponseDataToCacheFile:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>缓存内容</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)saveResponseDataToCacheFile:(NSData *)<em>data</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>网络内容</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cacheTimeInSeconds" title="cacheTimeInSeconds"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheTimeInSeconds">&ndash;&nbsp;cacheTimeInSeconds</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>缓存时间
+如果自定义缓存功能，则该方法失效</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSInteger)cacheTimeInSeconds</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>缓存时间，单位 s</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cacheVersion" title="cacheVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheVersion">&ndash;&nbsp;cacheVersion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>缓存版本号</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (long long)cacheVersion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>版本号</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cacheVersionString" title="cacheVersionString"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheVersionString">&ndash;&nbsp;cacheVersionString</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>版本号字符串</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)cacheVersionString</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>版本号字符串</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cacheSensitiveData" title="cacheSensitiveData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheSensitiveData">&ndash;&nbsp;cacheSensitiveData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>缓存 key 的增加标识，用于标识哪些内容需要过期处理</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable id)cacheSensitiveData</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><code>NSArray</code> or <code>NSDictionary</code>， 或者是字符串，或者是自定义类的 <code>description</code> 字段</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/writeCacheAsynchronously" title="writeCacheAsynchronously"></a>
+	<h3 class="method-title"><code><a href="#//api/name/writeCacheAsynchronously">&ndash;&nbsp;writeCacheAsynchronously</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否异步写入缓存</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)writeCacheAsynchronously</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>默认 YES 异步</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startWithCache:withCompletionBlockWithSuccess:failure:" title="startWithCache:withCompletionBlockWithSuccess:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startWithCache:withCompletionBlockWithSuccess:failure:">&ndash;&nbsp;startWithCache:withCompletionBlockWithSuccess:failure:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>开始网络请求</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)startWithCache:(BOOL)<em>cacheable</em> withCompletionBlockWithSuccess:(MLSRequestCompletionBlock)<em>success</em> failure:(MLSRequestCompletionBlock)<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cacheable</code></th>
+						<td><p>是否缓存</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>成功回调</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>失败回调</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearCache" title="clearCache"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearCache">&ndash;&nbsp;clearCache</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>清除缓存</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearCache</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequest.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Getter Methods" name="task_Getter Methods"></a>
+						<h2 class="task-title">Getter Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/cacheBasePath" title="cacheBasePath"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheBasePath">&ndash;&nbsp;cacheBasePath</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)cacheBasePath</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 MinLison. All rights reserved. Updated: 2019-08-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

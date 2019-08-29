@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLSNetworkConfig Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MLSNetwork </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MinLison</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/baseUrl">baseUrl</option>
+		
+		<option value="//api/name/cacheManager">cacheManager</option>
+		
+		<option value="//api/name/cdnUrl">cdnUrl</option>
+		
+		<option value="//api/name/debugLogEnabled">debugLogEnabled</option>
+		
+		<option value="//api/name/enctyptManager">enctyptManager</option>
+		
+		<option value="//api/name/logger">logger</option>
+		
+		<option value="//api/name/modelManager">modelManager</option>
+		
+		<option value="//api/name/securityPolicy">securityPolicy</option>
+		
+		<option value="//api/name/serverRootDataClass">serverRootDataClass</option>
+		
+		<option value="//api/name/sessionConfiguration">sessionConfiguration</option>
+		
+		<option value="//api/name/urlFilters">urlFilters</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedConfig">+ sharedConfig</option>
+		
+		<option value="//api/name/sharedConfigWithMoudleIdentifier:">+ sharedConfigWithMoudleIdentifier:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addUrlFilter:">- addUrlFilter:</option>
+		
+		<option value="//api/name/clearUrlFilter">- clearUrlFilter</option>
+		
+		<option value="//api/name/removeUrlFilter:">- removeUrlFilter:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLSNetworkConfig Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLSNetworkConfig.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>MARK: - 全局网络配置</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedConfig" title="sharedConfig"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedConfig">+&nbsp;sharedConfig</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>单利</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (MLSNetworkConfig *)sharedConfig</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>配置中心</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sharedConfigWithMoudleIdentifier:" title="sharedConfigWithMoudleIdentifier:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedConfigWithMoudleIdentifier:">+&nbsp;sharedConfigWithMoudleIdentifier:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>模块配置
+通过配置 request 的 moduleIdentifier, request 会根据 此id查找相应配置</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (MLSNetworkConfig *)sharedConfigWithMoudleIdentifier:(NSString *)<em>moudleIdentifier</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>moudleIdentifier</code></th>
+						<td><p>模块标识</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>配置中心</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/securityPolicy" title="securityPolicy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/securityPolicy">&nbsp;&nbsp;securityPolicy</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>https 配置</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AFSecurityPolicy *securityPolicy</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/debugLogEnabled" title="debugLogEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/debugLogEnabled">&nbsp;&nbsp;debugLogEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否开启 log 日志</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL debugLogEnabled</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionConfiguration" title="sessionConfiguration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionConfiguration">&nbsp;&nbsp;sessionConfiguration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>网络 Session 配置</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSURLSessionConfiguration *sessionConfiguration</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/baseUrl" title="baseUrl"></a>
+	<h3 class="method-title"><code><a href="#//api/name/baseUrl">&nbsp;&nbsp;baseUrl</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>域名
+<a href="../Classes/MLSBaseRequest.html">MLSBaseRequest</a> 可重写</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *baseUrl</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cdnUrl" title="cdnUrl"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cdnUrl">&nbsp;&nbsp;cdnUrl</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>CDN 地址
+<a href="../Classes/MLSBaseRequest.html">MLSBaseRequest</a> 可重写</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *cdnUrl</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/urlFilters" title="urlFilters"></a>
+	<h3 class="method-title"><code><a href="#//api/name/urlFilters">&nbsp;&nbsp;urlFilters</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>网络请求过滤器
+<a href="../Classes/MLSBaseRequest.html">MLSBaseRequest</a> 可重写</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong, readonly) NSArray&lt;id&lt;MLSUrlFilterProtocol&gt; &gt; *urlFilters</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logger" title="logger"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logger">&nbsp;&nbsp;logger</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>日志工具
+默认使用 NSLog
+<a href="../Classes/MLSNetworkRequest.html">MLSNetworkRequest</a> 可重写</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id&lt;MLSNetworkLogProtocol&gt; logger</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cacheManager" title="cacheManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheManager">&nbsp;&nbsp;cacheManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>缓存管理
+<a href="../Classes/MLSNetworkRequest.html">MLSNetworkRequest</a> 可重写</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id&lt;MLSNetworkCacheProtocol&gt; cacheManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/modelManager" title="modelManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/modelManager">&nbsp;&nbsp;modelManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>字典转模型工具
+<a href="../Classes/MLSNetworkRequest.html">MLSNetworkRequest</a> 可重写</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id&lt;MLSNetworkModelProtocol&gt; modelManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/enctyptManager" title="enctyptManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/enctyptManager">&nbsp;&nbsp;enctyptManager</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>加解密工具
+<a href="../Classes/MLSNetworkRequest.html">MLSNetworkRequest</a> 可重写</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id&lt;MLSEncryptProtocol&gt; enctyptManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/serverRootDataClass" title="serverRootDataClass"></a>
+	<h3 class="method-title"><code><a href="#//api/name/serverRootDataClass">&nbsp;&nbsp;serverRootDataClass</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>服务器返回的根数据结构
+<a href="../Classes/MLSNetworkRequest.html">MLSNetworkRequest</a> 可重写</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) Class&lt;MLSNetworkRootDataProtocol&gt; serverRootDataClass</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addUrlFilter:" title="addUrlFilter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addUrlFilter:">&ndash;&nbsp;addUrlFilter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>增加一个请求过滤器</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addUrlFilter:(id&lt;MLSUrlFilterProtocol&gt;)<em>filter</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filter</code></th>
+						<td><p>过滤器</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeUrlFilter:" title="removeUrlFilter:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeUrlFilter:">&ndash;&nbsp;removeUrlFilter:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>移除过滤器</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeUrlFilter:(id&lt;MLSUrlFilterProtocol&gt;)<em>filter</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>filter</code></th>
+						<td><p>过滤器</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearUrlFilter" title="clearUrlFilter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearUrlFilter">&ndash;&nbsp;clearUrlFilter</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>删除全部 url 过滤器</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearUrlFilter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSNetworkConfig.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 MinLison. All rights reserved. Updated: 2019-08-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

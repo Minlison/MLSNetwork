@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MLSRequestSubclassHolderProtocol Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MLSNetwork </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MinLison</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/acceptableContentTypes">acceptableContentTypes</option>
+		
+		<option value="//api/name/allowsCellularAccess">allowsCellularAccess</option>
+		
+		<option value="//api/name/baseUrl">baseUrl</option>
+		
+		<option value="//api/name/cdnUrl">cdnUrl</option>
+		
+		<option value="//api/name/requestAuthorizationHeaderFieldDictionary">requestAuthorizationHeaderFieldDictionary</option>
+		
+		<option value="//api/name/requestHeaderFieldValueDictionary">requestHeaderFieldValueDictionary</option>
+		
+		<option value="//api/name/requestMethod">requestMethod</option>
+		
+		<option value="//api/name/requestSerializerType">requestSerializerType</option>
+		
+		<option value="//api/name/requestTimeoutInterval">requestTimeoutInterval</option>
+		
+		<option value="//api/name/requestUrl">requestUrl</option>
+		
+		<option value="//api/name/responseSerializerType">responseSerializerType</option>
+		
+		<option value="//api/name/useCDN">useCDN</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/buildCustomUrlRequest">- buildCustomUrlRequest</option>
+		
+		<option value="//api/name/cacheFileNameFilterForRequestArgument:">- cacheFileNameFilterForRequestArgument:</option>
+		
+		<option value="//api/name/jsonValidator">- jsonValidator</option>
+		
+		<option value="//api/name/queryStringSerializationRequest:param:error:">- queryStringSerializationRequest:param:error:</option>
+		
+		<option value="//api/name/requestArgument">- requestArgument</option>
+		
+		<option value="//api/name/requestCompleteFilter">- requestCompleteFilter</option>
+		
+		<option value="//api/name/requestCompletePreprocessor">- requestCompletePreprocessor</option>
+		
+		<option value="//api/name/requestFailedFilter">- requestFailedFilter</option>
+		
+		<option value="//api/name/requestFailedPreprocessor">- requestFailedPreprocessor</option>
+		
+		<option value="//api/name/requestQueryArgument">- requestQueryArgument</option>
+		
+		<option value="//api/name/statusCodeValidator:">- statusCodeValidator:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MLSRequestSubclassHolderProtocol Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MLSRequestProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>子类继承可实现的方法</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/baseUrl" title="baseUrl"></a>
+	<h3 class="method-title"><code><a href="#//api/name/baseUrl">&nbsp;&nbsp;baseUrl</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>网络请求 URL
+该 URL 的优先级高于 Configuation 的优先级
+根 URL 类似 <a href="http://www.baidu.com">http://www.baidu.com</a>
+网络请求 URL</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *baseUrl</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestUrl" title="requestUrl"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestUrl">&nbsp;&nbsp;requestUrl</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>二级地址
+如果要请求的地址为 <a href="http://www.baidu.com/api/user">http://www.baidu.com/api/user</a>
+则 baseUrl 为 <a href="http://www.baidu.com">http://www.baidu.com</a>
+requestUrl 为 /api/user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *requestUrl</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>二级地址</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cdnUrl" title="cdnUrl"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cdnUrl">&nbsp;&nbsp;cdnUrl</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>CDN 地址</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *cdnUrl</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>CDN 地址</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestTimeoutInterval" title="requestTimeoutInterval"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestTimeoutInterval">&nbsp;&nbsp;requestTimeoutInterval</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>超时时长</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval requestTimeoutInterval</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>超时时长 单位 秒</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestMethod" title="requestMethod"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestMethod">&nbsp;&nbsp;requestMethod</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>HTTP Method</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MLSRequestMethod requestMethod</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  请求方法</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSerializerType" title="requestSerializerType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSerializerType">&nbsp;&nbsp;requestSerializerType</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>请求解析类型</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MLSRequestSerializerType requestSerializerType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>请求的参数解析类型</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/responseSerializerType" title="responseSerializerType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/responseSerializerType">&nbsp;&nbsp;responseSerializerType</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>响应内容解析类型</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MLSResponseSerializerType responseSerializerType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>解析类型</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestAuthorizationHeaderFieldDictionary" title="requestAuthorizationHeaderFieldDictionary"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestAuthorizationHeaderFieldDictionary">&nbsp;&nbsp;requestAuthorizationHeaderFieldDictionary</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>请求头授权</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *requestAuthorizationHeaderFieldDictionary</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>  授权内容</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestHeaderFieldValueDictionary" title="requestHeaderFieldValueDictionary"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestHeaderFieldValueDictionary">&nbsp;&nbsp;requestHeaderFieldValueDictionary</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>请求头</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *requestHeaderFieldValueDictionary</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>请求头参数字典</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/acceptableContentTypes" title="acceptableContentTypes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/acceptableContentTypes">&nbsp;&nbsp;acceptableContentTypes</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>可接收 Content-Type</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSSet&lt;NSString*&gt; *acceptableContentTypes</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Content-Types</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/useCDN" title="useCDN"></a>
+	<h3 class="method-title"><code><a href="#//api/name/useCDN">&nbsp;&nbsp;useCDN</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否使用 CDN</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL useCDN</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>YES 使用 NO 不使用</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/allowsCellularAccess" title="allowsCellularAccess"></a>
+	<h3 class="method-title"><code><a href="#//api/name/allowsCellularAccess">&nbsp;&nbsp;allowsCellularAccess</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>是否允许蜂窝网络
+默认是 YES</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL allowsCellularAccess</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>是否允许蜂窝网络访问</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestCompletePreprocessor" title="requestCompletePreprocessor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestCompletePreprocessor">&ndash;&nbsp;requestCompletePreprocessor</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>在网络请求完成，没有回调到主线程之前，会调用该方法
+如果是从缓存中获取的内容，则会在主线程中调用该方法，相当于 <a href="#//api/name/requestCompleteFilter"><code>requestCompleteFilter</code></a>
+如果返回 NO， 则不会调用 <a href="#//api/name/requestCompleteFilter">requestCompleteFilter</a> 方法，该网络请求不会结束</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)requestCompletePreprocessor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestCompleteFilter" title="requestCompleteFilter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestCompleteFilter">&ndash;&nbsp;requestCompleteFilter</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>网络请求成功后，会调用该方法（主线程）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestCompleteFilter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestFailedPreprocessor" title="requestFailedPreprocessor"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestFailedPreprocessor">&ndash;&nbsp;requestFailedPreprocessor</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>网络请求失败调用
+类似 <a href="#//api/name/requestCompletePreprocessor"><code>requestCompletePreprocessor</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)requestFailedPreprocessor</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestFailedFilter" title="requestFailedFilter"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestFailedFilter">&ndash;&nbsp;requestFailedFilter</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>网络请求失败调用
+类似 <a href="#//api/name/requestCompleteFilter"><code>requestCompleteFilter</code></a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)requestFailedFilter</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestArgument" title="requestArgument"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestArgument">&ndash;&nbsp;requestArgument</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>参数</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable id)requestArgument</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>参数 NSDictionary</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestQueryArgument" title="requestQueryArgument"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestQueryArgument">&ndash;&nbsp;requestQueryArgument</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>拼接到url中的参数，主要针对 非GET请求，url拼接参数使用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSDictionary *)requestQueryArgument</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>参数 NSDictionary</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cacheFileNameFilterForRequestArgument:" title="cacheFileNameFilterForRequestArgument:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheFileNameFilterForRequestArgument:">&ndash;&nbsp;cacheFileNameFilterForRequestArgument:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>缓存的文件名，或者 key</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)cacheFileNameFilterForRequestArgument:(id)<em>argument</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>argument</code></th>
+						<td><p>请求参数</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>缓存的文件名或者 key</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/queryStringSerializationRequest:param:error:" title="queryStringSerializationRequest:param:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/queryStringSerializationRequest:param:error:">&ndash;&nbsp;queryStringSerializationRequest:param:error:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>对一个请求进行参数排列</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)queryStringSerializationRequest:(NSURLRequest *)<em>request</em> param:(NSDictionary *)<em>param</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>网络请求</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>param</code></th>
+						<td><p>参数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>错误</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>排列后的参数</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/buildCustomUrlRequest" title="buildCustomUrlRequest"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildCustomUrlRequest">&ndash;&nbsp;buildCustomUrlRequest</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>自定义构建一个 URLRequest
+如果该方法返回不为空 <a href="#//api/name/requestUrl"><code>requestUrl</code></a>, <a href="#//api/name/requestTimeoutInterval"><code>requestTimeoutInterval</code></a>, <a href="#//api/name/requestArgument"><code>requestArgument</code></a>, <a href="#//api/name/allowsCellularAccess"><code>allowsCellularAccess</code></a>, <a href="#//api/name/requestMethod"><code>requestMethod</code></a> and <a href="#//api/name/requestSerializerType"><code>requestSerializerType</code></a> 方法都不会调用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSURLRequest *)buildCustomUrlRequest</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>自定义 URLRequest</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/jsonValidator" title="jsonValidator"></a>
+	<h3 class="method-title"><code><a href="#//api/name/jsonValidator">&ndash;&nbsp;jsonValidator</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>JSON 校验
+用来校验，JSON 格式是否正确
+return @{
+@&ldquo;userId&rdquo;: [NSNumber class],
+@&ldquo;nick&rdquo;: [NSString class],
+@&ldquo;level&rdquo;: [NSNumber class]
+};</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable id)jsonValidator</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>校验 JSON</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/statusCodeValidator:" title="statusCodeValidator:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/statusCodeValidator:">&ndash;&nbsp;statusCodeValidator:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>响应代码校验</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)statusCodeValidator:(NSError **)<em>error</em></code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>StatusCode 是否正确，如果返回 NO ，则进行错误回调</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MLSRequestProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2019 MinLison. All rights reserved. Updated: 2019-08-29</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

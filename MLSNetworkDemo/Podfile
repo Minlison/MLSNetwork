@@ -1,0 +1,20 @@
+#source 'https://cdn.cocoapods.org/'
+source 'https://github.com/cocoapods/Specs.git'
+source 'https://github.com/Minlison/Specs.git'
+
+platform :ios, '9.0'
+install! 'cocoapods',
+#deterministic_uuids: false,
+#disable_input_output_paths: true,
+#generate_multiple_pod_projects: true,
+#incremental_installation: true
+
+use_frameworks!
+inhibit_all_warnings!
+target 'MLSNetworkDemo' do
+  pod 'MLSNetwork', :path => '../'#, :subspecs => ['Core', 'RAC','Coobjc']
+    pod 'MLSModel'
+    pod 'MLSCache'
+    pod 'MLSLogger'
+    pod 'MBProgressHUD'
+end
