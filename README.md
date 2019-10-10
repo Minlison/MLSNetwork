@@ -68,8 +68,8 @@ MLSNetwork 属于个人研发
 
 ## 感谢
 
-YTKNetwork 基于 [YTKNetwork](https://github.com/yuantiku/YTKNetwork) 进行开发，感谢他们对开源社区做出的贡献。
+MLSNetwork 基于 [YTKNetwork](https://github.com/yuantiku/YTKNetwork) 进行开发，感谢他们对开源社区做出的贡献。
 
 ## 协议
 
-YTKNetwork 被许可在 MIT 协议下使用。查阅 LICENSE 文件来获得更多信息。
+MLSNetwork 被许可在 MIT 协议下使用。查阅 LICENSE 文件来获得更多信息。
