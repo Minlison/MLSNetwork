@@ -23,6 +23,7 @@ MLSNetwork 是个人基于 [YTKNetwork](https://github.com/yuantiku/YTKNetwork) 
  * 支持批量的网络请求发送，并统一设置它们的回调（实现在 `YTKBatchRequest` 类中）
  * 支持在发起网络请求前，先发起另外一个网络请求，适配场景：Token过期重新获取。 [MLSNetworkRequest](./docs/markdown/Classes/MLSNetworkRequest.md) preRetryRequest 属性。
  * 支持下拉刷新，上拉加载式网络请求，[MLSRefreshNetworkRequest](./docs/markdown/Classes/MLSRefreshNetworkRequest.md)
+ * 支持 RAC、Coobjc 编程
 	
 注意：独立 Request 的配置优先级比全局优先级高，为了模块独立使用而生。
 
