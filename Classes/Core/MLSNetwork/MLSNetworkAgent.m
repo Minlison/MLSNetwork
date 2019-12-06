@@ -124,7 +124,7 @@
         url = [url URLByAppendingPathComponent:@""];
     }
     NSDictionary * params = [request requestQueryArgument];
-    if (params != nil && request.requestMethod != MLSRequestMethodGET) {
+    if (params != nil && params.count > 0 && request.requestMethod != MLSRequestMethodGET) {
         NSString *queryStr = AFQueryStringFromParameters(params);
         detailUrl = [detailUrl stringByAppendingFormat:@"?%@",queryStr];
     }
