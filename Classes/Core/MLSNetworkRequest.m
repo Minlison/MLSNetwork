@@ -64,6 +64,9 @@ NSString *const MLSRequestRetryRetryErrorKey = @"MLSRequestRetryRetryErrorKey";
 
 - (void)start
 {
+    if (self.logger) {
+        [self.logger log:MLSNetworkLogLevelInfo msg:@"----start----%@",self];
+    }
     [super start];
     self.startTime = [[NSDate date] timeIntervalSince1970];
 }
@@ -215,6 +218,9 @@ NSString *const MLSRequestRetryRetryErrorKey = @"MLSRequestRetryRetryErrorKey";
 
 - (void)requestCompleteFilter {
     [super requestCompleteFilter];
+    if (self.logger) {
+        [self.logger log:MLSNetworkLogLevelInfo msg:@"----Complete----%@",self];
+    }
 }
 
 - (BOOL)requestFailedPreprocessor {
@@ -223,6 +229,9 @@ NSString *const MLSRequestRetryRetryErrorKey = @"MLSRequestRetryRetryErrorKey";
 
 - (void)requestFailedFilter {
     [super requestFailedFilter];
+    if (self.logger) {
+        [self.logger log:MLSNetworkLogLevelInfo msg:@"----Failed----%@",self];
+    }
 }
 
 - (void)clearCacheVariables {
