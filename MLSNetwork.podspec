@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "MLSNetwork"
-  s.version      = "1.0.1"
+  s.version      = "1.0.3"
   s.summary      = "模块化网络中心"
   s.description  = <<-DESC
                     基于YTKNewotk 二次封装，一款健壮的，可强自定义的网络库

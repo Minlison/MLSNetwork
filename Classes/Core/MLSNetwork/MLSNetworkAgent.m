@@ -65,6 +65,11 @@
         _allStatusCodes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(100, 500)];
         pthread_mutex_init(&_lock, NULL);
 
+        __weak __typeof(self)weakSelf = self;
+        [_manager setSessionDidReceiveAuthenticationChallengeBlock:^NSURLSessionAuthChallengeDisposition(NSURLSession * _Nonnull session, NSURLAuthenticationChallenge * _Nonnull challenge, NSURLCredential * _Nullable __autoreleasing * _Nullable credential) {
+            __strong __typeof(weakSelf)strongSelf = weakSelf;
+            return [strongSelf _URLSession:session didReceiveChallenge:challenge credential:credential];
+        }];
         _manager.securityPolicy = _config.securityPolicy;
         _manager.responseSerializer = [AFHTTPResponseSerializer serializer];
         // Take over the status code validation
@@ -124,7 +129,7 @@
         url = [url URLByAppendingPathComponent:@""];
     }
     NSDictionary * params = [request requestQueryArgument];
-    if (params != nil && request.requestMethod != MLSRequestMethodGET) {
+    if (params != nil && params.count > 0 && request.requestMethod != MLSRequestMethodGET) {
         NSString *queryStr = AFQueryStringFromParameters(params);
         detailUrl = [detailUrl stringByAppendingFormat:@"?%@",queryStr];
     }
@@ -204,7 +209,6 @@
         param = queryParams;
     }
     
-//    AFConstructingBlock constructingBlock = [request constructingBodyBlock];
     AFHTTPRequestSerializer *requestSerializer = [self requestSerializerForRequest:request];
     NSString *requestMethodString = @"GET";
     switch (method) {
@@ -214,33 +218,27 @@
             } else {
                 requestMethodString = @"GET";
                 break;
-//                return [self dataTaskWithHTTPMethod:@"GET" requestSerializer:requestSerializer URLString:url parameters:param uploadProgress:request.uploadProgress downloadProgress:request.downloadProgress constructingBodyWithBlock:request.constructingBodyBlock error:error];
             }
         case MLSRequestMethodPOST: {
             requestMethodString = @"POST";
             break;
         }
-//            return [self dataTaskWithHTTPMethod:@"POST" requestSerializer:requestSerializer URLString:url parameters:param uploadProgress:request.uploadProgress downloadProgress:request.downloadProgress constructingBodyWithBlock:request.constructingBodyBlock error:error];
         case MLSRequestMethodHEAD:{
             requestMethodString = @"HEAD";
             break;
         }
-//            return [self dataTaskWithHTTPMethod:@"HEAD" requestSerializer:requestSerializer URLString:url parameters:param error:error];
         case MLSRequestMethodPUT:{
             requestMethodString = @"PUT";
             break;
         }
-//            return [self dataTaskWithHTTPMethod:@"PUT" requestSerializer:requestSerializer URLString:url parameters:param uploadProgress:request.uploadProgress downloadProgress:request.downloadProgress constructingBodyWithBlock:request.constructingBodyBlock error:error];
         case MLSRequestMethodDELETE:{
             requestMethodString = @"DELETE";
             break;
         }
-//            return [self dataTaskWithHTTPMethod:@"DELETE" requestSerializer:requestSerializer URLString:url parameters:param uploadProgress:request.uploadProgress downloadProgress:request.downloadProgress constructingBodyWithBlock:request.constructingBodyBlock error:error];
         case MLSRequestMethodPATCH:{
             requestMethodString = @"PATCH";
             break;
         }
-//            return [self dataTaskWithHTTPMethod:@"PATCH" requestSerializer:requestSerializer URLString:url parameters:param error:error];
     }
     return [self dataTaskWithHTTPMethod:requestMethodString requestSerializer:requestSerializer URLString:url parameters:param uploadProgress:request.uploadProgress downloadProgress:request.downloadProgress constructingBodyWithBlock:request.constructingBodyBlock error:error];
 }
@@ -520,6 +518,46 @@
 }
 
 #pragma mark -
+- (NSURLSessionAuthChallengeDisposition)_URLSession:(NSURLSession *)session
+didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
+ credential:(NSURLCredential **)credential
+{
+    // 先判断全局配置
+    __block NSURLSessionAuthChallengeDisposition disposition = NSURLSessionAuthChallengePerformDefaultHandling;
+    if (MLSNetworkConfig.sharedConfig.securityPolicy) {
+        disposition = [self judgeUseSecurity:MLSNetworkConfig.sharedConfig.securityPolicy Challenge:challenge credential:credential];
+        if (disposition == NSURLSessionAuthChallengeUseCredential) {
+            return disposition;
+        }
+    }
+    // 当前正在进行中的 request 校验证书
+    [_requestsRecord enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, MLSBaseRequest * _Nonnull obj, BOOL * _Nonnull stop) {
+        if ([obj.originalRequest.URL.host isEqualToString:challenge.protectionSpace.host]) {
+            disposition = [self judgeUseSecurity:obj.securityPolicy Challenge:challenge credential:credential];
+            if (disposition == NSURLSessionAuthChallengeUseCredential) {
+                *stop = YES;
+            }
+        }
+    }];
+    return disposition;
+}
+
+- (NSURLSessionAuthChallengeDisposition)judgeUseSecurity:(AFSecurityPolicy *)securityPolicy Challenge:(NSURLAuthenticationChallenge *)challenge credential:(NSURLCredential **)credential{
+    NSURLSessionAuthChallengeDisposition disposition = NSURLSessionAuthChallengePerformDefaultHandling;
+    if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
+        if ([securityPolicy evaluateServerTrust:challenge.protectionSpace.serverTrust forDomain:challenge.protectionSpace.host]) {
+            disposition = NSURLSessionAuthChallengeUseCredential;
+            if (credential != NULL) {
+                *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
+            }
+        } else {
+            disposition = NSURLSessionAuthChallengeCancelAuthenticationChallenge;
+        }
+    } else {
+        disposition = NSURLSessionAuthChallengePerformDefaultHandling;
+    }
+    return disposition;
+}
 
 - (NSURLSessionDataTask *)dataTaskWithHTTPMethod:(NSString *)method
                                requestSerializer:(AFHTTPRequestSerializer *)requestSerializer

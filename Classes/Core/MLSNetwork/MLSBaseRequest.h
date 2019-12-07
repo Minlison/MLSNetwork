@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "MLSRequestProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
+@class AFSecurityPolicy;
 @protocol MLSUrlFilterProtocol;
 
 typedef void (^MLSRequestUploadProgressBlock)(NSProgress *uploadProgress);
@@ -275,6 +276,10 @@ typedef void (^MLSRequestDownloadProgressBlock)(NSProgress *uploadProgress);
  */
 @property (nonatomic) MLSRequestPriority requestPriority __IOS_AVAILABLE(8.0);
 
+/**
+ 证书校验策略级别
+*/
+@property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
 
 /**
  设置回调 block
